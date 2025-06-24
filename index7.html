@@ -1,0 +1,275 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Login | Ummatii</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f1f4f9, #dff1ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #101820;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #019870;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      font-size: 0.95rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Interns Login</h2>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+
+     
+    <div class="checkbox-container">
+      <input type="checkbox" id="togglePassword" />
+      <label for="togglePassword">Show Password</label>
+    </div>
+
+    <button onclick="checkLogin()">Login</button>
+    <p id="error" class="error">❌ Invalid username or password</p>
+  </div>
+
+  <script>
+    // Show welcome popup
+    window.onload = function () {
+      alert("🔐 Welcome to the Interns Login.\nPlease enter your credentials to continue.");
+    };
+
+    // Password toggle
+    const togglePassword = document.getElementById("togglePassword");
+    const passwordField = document.getElementById("password");
+
+    togglePassword.addEventListener("change", function () {
+      passwordField.type = this.checked ? "text" : "password";
+    });
+
+    // Login check
+    function checkLogin() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (user === "Ummatii" && pass === "admin@12345") {
+        window.location.href = "https://surveyheart.com/form/6852eb8f1721a26433d667aa";
+      } 
+      else if (user === "Ummatii" && pass === "ummatii@123") {
+        window.location.href = "https://forms.gle/HsJWogKDRftNJMdj9";
+      } 
+      else {
+        error.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Login | Ummatii</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f1f4f9, #dff1ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #101820;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-container input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #019870;
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+      font-size: 0.95rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Interns Login</h2>
+    <input type="text" id="username" placeholder="Username" required />
+    <input type="password" id="password" placeholder="Password" required />
+
+    <!-- Fixed: Proper aligned checkbox and label -->
+    <div class="checkbox-container">
+      <input type="checkbox" id="togglePassword" />
+      <label for="togglePassword">Show Password</label>
+    </div>
+
+    <button onclick="checkLogin()">Login</button>
+    <p id="error" class="error">❌ Invalid username or password</p>
+  </div>
+
+  <script>
+    // Show welcome popup
+    window.onload = function () {
+      alert("🔐 Welcome to the Interns Login.\nPlease enter your credentials to continue.");
+    };
+
+    // Password toggle
+    const togglePassword = document.getElementById("togglePassword");
+    const passwordField = document.getElementById("password");
+
+    togglePassword.addEventListener("change", function () {
+      passwordField.type = this.checked ? "text" : "password";
+    });
+
+    // Login check
+    function checkLogin() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (user === "Ummatii" && pass === "admin@12345") {
+        window.location.href = "https://surveyheart.com/form/6852eb8f1721a26433d667aa";
+      } 
+      else if (user === "Ummatii" && pass === "ummatii@123") {
+        window.location.href = "https://forms.gle/HsJWogKDRftNJMdj9";
+      } 
+      else {
+        error.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
